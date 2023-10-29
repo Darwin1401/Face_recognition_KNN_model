@@ -47,7 +47,7 @@ while True:
         bottom *= 4
         left *= 4
         cv2.rectangle(frame, (left, top), (right, bottom), (0, 255, 255), 2)
-        cv2.putText(frame, name, (left-10, top-6), font, 0.8, (255, 255, 255), 1)
+        cv2.putText(frame, name, (left-10, top-6), font, 0.8, (0, 0, 255), 1)
 
         cv2.imshow('Video', frame)
     if cv2.waitKey(1) & 0xFF == ord('q'):
